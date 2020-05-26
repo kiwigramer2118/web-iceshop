@@ -55,10 +55,33 @@ margin-top: 2%;
     text-align: center;
 }
 
+
 .campos{
+    
+ display: flex;
+ flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    text-align: center; 
     color:rgb(120, 120, 120); 
     margin-top: 2%;
+
+width: 15%;
+margin-left: 43%;
+
 }
+.logos{
+ display: flex;
+ margin-left: 30%;
+ margin-right: 25%;
+ flex-wrap: wrap;
+ margin-top: 3%;
+}
+
+.elige{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:rgb(30, 190, 129); 
+    margin-top: 2%;
+}
+

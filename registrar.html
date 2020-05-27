@@ -14,38 +14,41 @@
 
 <div class="campos">
    Nombre de la empresa
-   <input type="text" >
+   <input type="text" id="nombreEmpresa" >
 </div>
 
 <div class="campos">
     Nombre estudiante
-    <input type="text" >
+    <input type="text" id="nombreEstudiante">
 </div>
 <div class="campos">
    Codigo
-    <input type="text" >
+    <input type="text" id="codigo">
 </div>
 <div class="campos">
     Tipo de producto
-    <input type="text" >
+    <input type="text" id="tipoProducto">
 </div>
 <div class="elige">Elige el logo de tu empresa</div>
 
 <div class="logos">
-    <img  src="/imagenes/logo1.png" >
-    <img  src="/imagenes/logo2.png" >
-    <img  src="/imagenes/logo3.png" >
-    <img  src="/imagenes/logo4.png" >
-    <img  src="/imagenes/logo5.png" >
-    <img  src="/imagenes/logo6.png" >
+    <img  src="/imagenes/logo1.png" id="img1">
+    <img  src="/imagenes/logo2.png" id="img2">
+    <img  src="/imagenes/logo3.png" id="img3">
+    <img  src="/imagenes/logo4.png" id="img4">
+    <img  src="/imagenes/logo5.png" id="img5">
+    <img  src="/imagenes/logo6.png" id="img6">
 </div>
 <div class="btnregistrar">
-   <a href="/vendedor.html"><img  src="/imagenes/btnregistrar.png" ></a> 
+   <a href="/vendedor.html"><img  src="/imagenes/btnregistrar.png"  id="registrarBtn"></a> 
 </div>
 
    
     
 </body>
-
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+<script type="text/javascript" src="/control/FuncionesRegistrarVendedor.js"></script>
+<script type="text/javascript" src="/model/Empresa.js"></script>
 
 </html>

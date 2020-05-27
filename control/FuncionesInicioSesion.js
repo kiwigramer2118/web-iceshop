@@ -11,32 +11,28 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
   const usuario = document.getElementById("imputUsuario");
-  const contrasena = document.getElementById("imputContrasena");
+  const valorContrasena = document.getElementById("imputContrasena");
   const inicarBtn = document.getElementById("iniciarBtn");
+  const database = firebase.database();
+  const storage = window.localStorage;
 
+  inicarBtn.addEventListener("click", function(event){
+    event.preventDefault();
+    database.ref().child("usuario").on("child_added", function(snapshot){
 
-inicarBtn.addEventListener("click",iniciar());
-function inciar(){
-let usuario = usuario.value;
-let contrasena = contrasena.value;
+      var objeto = snapshot.val();
+      let nombre = usuario.value;
+      let contrasena = valorContrasena.value;
+      
 
-
-if(usuario == null){
-  console.log("el usuario no existe");
-}
-database.ref().child("usuario").on("value",function (snapshot){
-
-if(){
-
-}
-
-});
-
- /* FirebaseDatabase.getInstance().getReference()
-  .child("usuario").child(usuario)
-  .addListenerForSingleValueEvent(new ValueEventListener() {*/
-}
-
-
- 
-  
+      if (objeto.usuario==nombre && objeto.contraseña==contrasena){
+        console.log("funciona");
+        storage.setItem("nombreUsuario", objeto.nombre);
+        window.location.href = "/iniciada.html";
+    }
+    if(objeto.usuario!=nombre || objeto.contraseña !=contrasena){
+      alert("usuario o contraseña incorrectos");
+    }
+      
+    });
+  });

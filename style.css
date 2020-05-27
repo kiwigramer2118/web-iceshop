@@ -116,3 +116,23 @@ width: 20%;
  .lista h1{
     color:rgb(39, 211, 145);
  }
+
+#sino{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(120, 120, 120); 
+    display: flex;
+    text-align: center;
+    margin-left: 40%;
+}
+#sino img{
+    margin-right: 3%;
+}
+
+#pregunta{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(120, 120, 120); 
+    margin-bottom: 3%;
+    margin-top: 2%;
+
+}

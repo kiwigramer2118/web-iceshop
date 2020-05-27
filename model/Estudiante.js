@@ -5,4 +5,6 @@ class Estudiante{
         this.contrasena=contrasena;
         this.codigo=codigo;
     }
+
+    
 }

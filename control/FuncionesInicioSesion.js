@@ -9,4 +9,34 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+  const usuario = document.getElementById("imputUsuario");
+  const contrasena = document.getElementById("imputContrasena");
+  const inicarBtn = document.getElementById("iniciarBtn");
+
+
+inicarBtn.addEventListener("click",iniciar());
+function inciar(){
+let usuario = usuario.value;
+let contrasena = contrasena.value;
+
+
+if(usuario == null){
+  console.log("el usuario no existe");
+}
+database.ref().child("usuario").on("value",function (snapshot){
+
+if(){
+
+}
+
+});
+
+ /* FirebaseDatabase.getInstance().getReference()
+  .child("usuario").child(usuario)
+  .addListenerForSingleValueEvent(new ValueEventListener() {*/
+}
+
+
+ 
   

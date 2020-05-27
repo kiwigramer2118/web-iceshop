@@ -36,6 +36,8 @@ function registrar() {
     let tipoPro = tipoProducto.value;
 
 
+    storage.setItem("nombreEmpresa", nombreEm);
+
     let empresa = new Empresa(nombreEst, codigoEst, nombreEm, tipoPro, imagenSeleccionada);
 
     database.ref().child("empresas").child(nombreEm).set(empresa);
